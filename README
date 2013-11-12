@@ -1,0 +1,13 @@
+This is the Bureau of Economic Analysis Visualizer App.
+
+Libraries used:
+-- jQuery
+-- d3
+-- nv.d3
+-- underscore
+
+CSS framework:
+-- bootstrap
+
+Application layer:
+-- python/Django
