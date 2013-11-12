@@ -1,0 +1,21 @@
+{% extends "_base.html" %}
+{% block style %}
+    <link rel="stylesheet" href="/static/css/nv.d3.min.css">
+{% endblock %}
+{% block content %}
+    <div id="wrapper">
+        <header><h1 id="public-table">Getting data for<span id="year">{{ year }}</span><span style="display:none" id="query-string">{{ query }}</span></h1>
+            <h2 id="statistic"></h2>
+            <h3 id="display">Press 1, 2, or 3 for a visualization</h3>
+        </header>
+    </div>
+    <section id="chart">
+        <svg></svg>
+    </section>
+    <footer id='footer'></footer>
+{% endblock %}
+{% block scripts %}
+    <script src="/static/js/objectSorter.js"></script>
+    <script src="/static/js/incomes.js"></script>
+
+{% endblock %}

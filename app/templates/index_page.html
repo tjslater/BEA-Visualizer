@@ -1,0 +1,24 @@
+{% extends "_base.html" %}
+{% block style %}
+    <link rel="stylesheet" href="/static/css/nv.d3.min.css">
+{% endblock %}
+{% block content %}
+    <div id="wrapper">
+        <div class="jumbotron">
+            <h1>Welcome to the BEA Visualizer</h1>
+
+            <p>The purpose of this application is to quickly view information from the Bureau of Economic Analysis</p>
+
+            <h2>Controls</h2>
+
+            <p>In order to keep the UI clear, much of the controls are in the keys</p>
+            <ul>
+                <li>Keys 1,2,3 change the order of the data by standard, numerical, and alphabetical</li>
+                <li>Pressing the number again reverses the data</li>
+                <li>shift-up and shift-down change the year by 1, shift-pgUp and shift-pgDn change the year by 10</li>
+
+            </ul>
+        </div>
+    </div>
+    <footer id='footer'></footer>
+{% endblock %}
